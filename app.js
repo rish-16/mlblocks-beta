@@ -1,11 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('App loaded')
 
+    const header = document.getElementById('header')
+
+    const homeOption = document.getElementById('home-option')
     const productOption = document.getElementById('product-option')
     const integrationOptions = document.getElementById('integration-option')
 
-    const productSection = document.getElementById('product')
-    const integrationSection = document.getElementById('copy-button')
+    const homeSection = document.getElementById('hero')
+    const productSection = document.querySelector('#product-content span')
+    const integrationSection = document.querySelector('#integration-content')
 
     const python = document.getElementById('python')
     const javascript = document.getElementById('javascript')
@@ -18,6 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const editor = document.querySelector('#code-editor p')
 
+    homeOption.onclick = () => {
+        window.scroll({
+            behavior: 'smooth',
+            top: 0
+        })
+    }
+
     productOption.onclick = () => {
         productSection.scrollIntoView({
             behavior: 'smooth'
@@ -28,6 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
         integrationSection.scrollIntoView({
             behavior: 'smooth'
         })
+    }
+
+    window.onscroll = () => {
+        if (window.pageYOffset == 0) {
+            header.style.boxShadow = 'none'
+        } else {
+            header.style.boxShadow = '1px 1px 5px rgba(0, 0, 0, 0.1)'
+        }
     }
 
     python.onclick = () => {

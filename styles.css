@@ -29,7 +29,11 @@ body, html {
 
 #hero #header {
     width: 100%;
-    height: 100px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -449,15 +453,18 @@ body, html {
     }
 
     #hero #header #navbar {
-        width: 45%;
+        width: 50%;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        margin: auto 30px;
     }
 
     #hero #header #navbar p {
-        font-size: 15px;
-        padding: 12px 0;
+        padding: 0 15px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #222f3e;
     }
 
     #hero #hero-body #title span {
