@@ -492,7 +492,7 @@ body, html {
         font-weight: 600;
         border-radius: 100px 0 0 100px;
         height: 45px;
-        min-width: 250px;
+        min-width: 200px;
         border: none;
         background: #f1f2f6;
     }
