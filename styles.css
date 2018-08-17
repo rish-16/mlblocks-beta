@@ -94,6 +94,11 @@ body, html {
     margin: 0 auto;
 }
 
+#hero #hero-body #subtitle span {
+    font-weight: 600;
+    font-size: 18px;
+}
+
 #hero #hero-body #signup-field {
     width: 35%;
     height: 45px;
@@ -137,6 +142,25 @@ body, html {
     font:14px Helvetica,Arial,sans-serif;
     width:100%;
     margin-top: 15px;
+    text-align: center;
+}
+
+#mc_embed_signup #mc_embed_signup_scroll {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#mc_embed_signup #mc_embed_signup_scroll #mce-EMAIL {
+    text-indent: 15px;
+    font-family: Avenir Next;
+    font-weight: 600;
+    border-radius: 100px 0 0 100px;
+    height: 45px;
+    width: 35%;
+    border: none;
+    background: #f1f2f6;
+    font-size: 15px;
 }
 
 /* ---------------------------------------------------------------------------------------------------- */
@@ -174,7 +198,7 @@ body, html {
 
 #product {
     width: 100%;
-    height: 600px;
+    height: auto;
     text-align: center;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -193,6 +217,12 @@ body, html {
     font-size: 16px;
     margin: 0 auto;
     font-weight: 500;
+}
+
+.section-content span {
+    font-weight: 600;
+    font-size: 17px;
+    color: #222f3e;
 }
 
 .section-desc {
@@ -412,3 +442,142 @@ body, html {
 }
 
 /* ---------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 650px) {
+    #hero #header #logo {
+        height: 30px;
+    }
+
+    #hero #header #navbar {
+        width: 45%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #hero #header #navbar p {
+        font-size: 15px;
+        padding: 12px 0;
+    }
+
+    #hero #hero-body #title span {
+        font-size: 30px;
+    }
+
+    #hero #hero-body #title {
+        font-size: 35px;
+    }
+
+    #hero #hero-body #subtitle {
+        font-size: 15px;
+        width: 70%;
+        text-align: center;
+    }
+
+    #hero #hero-body #subtitle span {
+        font-size: 16px;
+    }
+
+    #mc_embed_signup {
+        background: #fff;
+        clear: left;
+        font: 14px Helvetica,Arial,sans-serif;
+        width: 85%;
+        margin: 20px auto;
+    }
+
+    #mc_embed_signup #mc_embed_signup_scroll #mce-EMAIL {
+        text-indent: 15px;
+        font-family: Avenir Next;
+        font-weight: 600;
+        border-radius: 100px 0 0 100px;
+        height: 45px;
+        min-width: 250px;
+        border: none;
+        background: #f1f2f6;
+    }
+
+    /* ---------------------------------------------------------------------------------------------------- */
+
+    #product {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    #product .section-title {
+        font-size: 30px;
+    }
+
+    #product .section-content {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    #product .section-content span {
+        font-size: 15px;
+    }
+
+    /* ---------------------------------------------------------------------------------------------------- */
+
+    #integration {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    #integration .section-title {
+        font-size: 30px;
+    }
+
+    #integration .section-content {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    #integration #editor-view {
+        width: 95%;
+        height: auto;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    #editor-view #language-choice i {
+        font-size: 30px;
+        color: #fdcb6e;
+        margin: auto 15px;
+    }
+
+    #integration #editor-view #code-editor {
+        overflow: scroll;
+    }
+
+    #integration #editor-view #code-editor p {
+        overflow: scroll;
+        font-size: 13px;
+    }
+
+    #editor-view #code-output {
+        overflow: scroll;
+    }
+    
+    #editor-view #code-output p {
+        font-weight: 600;
+        line-height: 21px;
+        color: #222f3e;
+        font-size: 13px;
+        padding-left: 10px;
+        padding-bottom: 15px;
+        padding-top: 10px;
+        user-select: text;    
+        font-family: Source Code Pro;
+        overflow: scroll;
+    }
+    
+}

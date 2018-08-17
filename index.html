@@ -6,7 +6,7 @@
         <title>MLBlocks</title>
         <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+        <!-- <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css"> -->
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,600,700" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
@@ -20,7 +20,7 @@
             <div id="header">
                 <img src="images/logo.png" id="logo">
                 <div id="navbar">
-                    <p id="product-option">What we do</p>
+                    <p id="product-option">Product</p>
                     <p id="integration-option">Integration</p>
                 </div>
             </div>
@@ -30,23 +30,21 @@
                     MLBlocks helps your business integrate Machine Learning pipelines into your applications with a single line of code.
                     No fuss. No sweat.
                     <br>
-                    <span style="font-weight: 600;font-size: 18px;">Sign up for our beta!</span>
+                    <span>Sign up for our beta!</span>
                 </p>
                 <!-- <input type="text" id="signup-field" placeholder="Your email"> -->
                 <!-- <button id="email-submit"><i class="fas fa-chevron-right" style="padding-left: 5px;font-size: 15px;"></i></button> -->
 
                 <div id="mc_embed_signup">
                     <form action="https://github.us19.list-manage.com/subscribe/post?u=ecfb6b9095045a9d44ca716ae&amp;id=a57831b978" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                        <!-- <label style="color:#222f3e;" for="mce-EMAIL">Sign up for our beta!</label> -->
-                        <input type="email" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email" required style="text-indent: 15px;font-family: Avenir Next;font-weight: 600;border-radius: 100px 0 0 100px;height: 45px;width: 400px;border: none;background: #f1f2f6;">
-                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                            <input type="text" name="b_ecfb6b9095045a9d44ca716ae_a57831b978" tabindex="-1">
-                        </div>
-                        <div class="clear">
-                            <input type="submit" value='Get started!' name="subscribe" id="mc-embedded-subscribe" class="button" style="border-radius: 0 100px 100px 0;background-color: #00b894;border: none;font-family: Avenir Next;font-weight: 600;font-size: 15px;height: 45px;">
-                        </div>
+                        <div id="mc_embed_signup_scroll" >
+                            <input type="email" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email">
+                            <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                <input type="text" name="b_ecfb6b9095045a9d44ca716ae_a57831b978" tabindex="-1">
+                            </div> -->
+                            <div class="clear">
+                                <input type="submit" value='Get started!' name="subscribe" id="mc-embedded-subscribe" class="button" style="border-radius: 0 100px 100px 0;background-color: #00b894;border: none;font-family: Avenir Next;font-weight: 600;font-size: 15px;height: 45px;padding: 0 20px;font-size: 15px;color: white;">
+                            </div>
                         </div>
                     </form>
                 </div>                
@@ -66,7 +64,7 @@
                 Finally, finding the perfect model for your business is tricky.
                 <br>
                 <br>
-                <span style="font-weight: 600;font-size: 17px;color: #222f3e;">
+                <span>
                     Leave the nitty-gritty details behind. Focus on the things that matter more!
                 </span>
             </p>
@@ -137,12 +135,13 @@
                             }
                             <br>
                             <br>
-                            <span class="ce-comment"># Get predictions response form trained model</span>
+                            <span class="ce-comment"># Get predictions response from trained model</span>
                             <br>
                             predictions = request.<span class="ce-function">get</span>(url, <span class="ce-param">data=</span>options)
                         </p>
                         <i title="Copy" id="copy-button" class="far fa-copy"></i>
                     </div>
+                    
                     <p id="output">JSON Output:</p>
                     <div id="code-output">
                         <p>
