@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const integrationOptions = document.getElementById('integration-option')
 
     const productSection = document.getElementById('product')
-    const integrationSection = document.getElementById('integration')
+    const integrationSection = document.getElementById('copy-button')
 
     const python = document.getElementById('python')
     const javascript = document.getElementById('javascript')
